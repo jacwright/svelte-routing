@@ -194,6 +194,14 @@ An action used on a root element to make all relative anchor elements navigate a
   <MyComponent/>
 </div>
 
+<script>
+  import links from 'svelte-routing/links';
+
+  export default {
+    actions: { links }
+  };
+</script>
+
 <!-- MyComponent.html -->
 <a href="/">Home</a>
 <a href="/replace" replace>Replace this URL</a>
